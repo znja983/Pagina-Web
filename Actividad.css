@@ -1,0 +1,72 @@
+.Actividad ul {
+    display: flex; /* Coloca los elementos de la lista en una fila  */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    list-style: none; /* Elimina los puntos o números de la lista */
+}
+
+/* Estilo para los enlaces dentro del menú */
+.Actividad a {
+    display: block; /* Hace que el enlace ocupe todo el espacio disponible */
+    padding: 1em 2em; /* Añade espacio interno alrededor del texto del enlace */
+    background-color: #00ccff; /* Color de fondo del enlace */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    color: #191C26; /* Color del texto */
+    transition: background-color 0.3s; /* Añade una transición suave al cambiar el color de fondo */
+}
+
+/* Estilo cuando el mouse pasa sobre el enlace */
+.Actividad a:hover {
+    background-color: #00ccff; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para los elementos de la lista principal */
+.Actividad ul li {
+    position: relative; /* Establece un contexto de posición para los submenús */
+    width: 100%;
+}
+
+/* Estilo para los submenús */
+.Actividad ul li ul {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú de forma absoluta respecto al elemento padre */
+    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
+    left: 0%; /* Alinea el submenú con el borde izquierdo del elemento padre */
+    padding: 0; /* Elimina el relleno del submenú */
+    margin: 0; /* Elimina el margen del submenú */
+    list-style: none; /* Elimina los puntos o números de la lista */
+    background-color: #00ccff; /* Color de fondo del submenú */
+    width: 100%; /* Hace que el submenú tenga el mismo ancho que el elemento padre */
+}
+
+/* Muestra el submenú cuando el mouse pasa */
+.Actividad ul li:hover ul {
+    display: block; /* Hace visible el submenú */
+}
+
+/* Estilo para los enlaces dentro del submenú */
+.Actividad ul li ul li a {
+    padding: 1em; /* Añade espacio interno alrededor del enlace del submenu */
+}
+.Actividad {
+    display: flex; /* Cambia a flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0 auto; /* Centra la barra horizontalmente */
+    padding: 0.5em; /* Reduce el espacio interno */
+    width: 50%; /* Ajusta el ancho de la barra */
+    font-size: 1em; /* Ajusta el tamaño del texto */
+    position: relative; /* Necesario para los pseudo-elementos */
+    background-color: white; /* Fondo blanco para la barra */
+}
+
+.JavaScrip {
+    background-color: aqua;
+}
+
+.agrandar{
+    transition: transform 0.3s ease;
+}
+.agrandar:hover{
+    transform: scale(1.1);
+}
